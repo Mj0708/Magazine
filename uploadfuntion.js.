@@ -1,0 +1,19 @@
+$(function () {
+
+    $(".part1, .part2").hide();
+    
+    $(".&#8249;, .&#8250;").bind("click", function () {
+
+      $(".part1, .part2").hide();        
+        
+      if ($(this).attr("class") == "part1")
+      {
+        $(".part1").show();
+      }
+      else 
+      { 
+        $(".part2").show();
+      }
+    });
+
+});
