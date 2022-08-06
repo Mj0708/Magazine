@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.head {
+  padding: 1px;
+  text-align: center;
+  background: #03a9fc;
+  color: white;
+  font-size: 15px;
+  Margin-top: 50px;
+  Margin-left: 420px;
+  Margin-right: 420px;
+  position: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  margin-left: 3px;
+  top: 20;
+}
+.img2 {  
+      width: 350px; 
+      float: left; 
+      margin-top: 10px;
+  	Height: 200px;
+margin-left:80px;
+}
+
+.text1{
+Float: Right;
+Color: Black;
+margin-right: 40px;
+}
+
+.img3 {  
+      width: 350px; 
+      float: left; 
+      margin-top: 10px;
+  	Height: 200px;
+margin-left:30px;
+}
+
+.text2{
+Float: Right;
+Color: Black;
+margin-right: 80px;
+}
+
+.vertical-center {
+  margin: 10px;
+  position: absolute;
+  top: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vertical-center1 {
+  margin: 10px;
+  position: absolute;
+  top: 37%;
+  -ms-transform: translateX(400%);
+  transform: translateX(400%);
+}
+
+a {
+  text-decoration: 3px;
+  display: inline;
+  padding: 20px 20px;
+margin-left:10px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #04AA6D;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: black;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+$(function () {
+
+    $(".part1, .part2").hide();
+    
+    $(".&#8249;, .&#8250;").bind("click", function () {
+
+      $(".part1, .part2").hide();        
+        
+      if ($(this).attr("class") == "part1")
+      {
+        $(".part1").show();
+      }
+      else 
+      { 
+        $(".part2").show();
+      }
+    });
+
+});
+
+</style><title></title>
+<body>
+<div class="head">
+<h1>This Week's Highlights</h1>
+</div>
+<br>
+
+ <div class="vertical-center">
+<a class="previous round" onclick="myFunction()">&#8249;</a></div>
+
+
+<div class="row"><div id="part1">
+	<div class="column">
+		<img src="https://i.ytimg.com/vi/Y2ODPFiksBE/maxresdefault.jpg" alt="Snow" class="img2"></div>
+	
+	<div class="column"><div class="text1">
+		<h1>Heading</h1>
+		<P>Something random</p>
+  	</div>
+</div>
+<div class="vl"></div>
+
+<div id="part1">
+	<div class="column">
+		<img src="https://cdn.britannica.com/91/204591-050-0232C454/Jeffrey-Dahmer-attorneys-hearing-Milwaukee-Wisconsin-August-22-1991.jpg" alt="Snow" class="img3"></div>
+	
+	<div class="column"><div class="text2">
+		<h1>Heading</h1>
+		<P>Something random</p>
+  	</div>
+
+<div class="vertical-center1">
+<a class="next round" onclick="myFunction1()">&#8250;</a>
+</div></div></div> 
+
+
+<div id="part2">
+	<div class="column">
+		<img src="https://casocriminal.org/wp-content/uploads/2021/11/albert-fish.jpg" alt="Snow" class="img2"></div>
+
+	<div class="column"><div class="text1">
+		<h1>Heading</h1>
+		<P>Something random</p>
+  </div>
+</div>
+
+<div class="vl"></div>
+
+<div id="part2">
+	<div class="column">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Leonarda_Cianciulli_mugshot.jpg" alt="Snow" class="img3"></div>
+
+	<div class="column"><div class="text2">
+		<h1>Heading</h1>
+		<P>Something random</p>
+  </div>
+</div>
+</div></div></div>
+ 
+
+
+
+
+  
+		 
